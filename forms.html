@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Forms</title>
+</head>
+<body>
+<!--
+get - gets information, search, alters url
+post - blog, submit form with info (like signing up for an account), doesnt change the url (so email, password, socials, etc dont get added to urls)
+value - fills in the field and passes on to the backend unless edited by user
+placeholder - greys out info in field, will not
+For checkboxes, its either a "yes" (when checked) or "im not even going to exist" (when not checked)
+radio button -  that share the same name will only allow you to select one button at a time, while buttons with different names would allow you to pick more than one (not recommended, harder to deselect)
+option*4 + tab - create for option tags
+option+shift - creates multiple cursors
+checked attribute - automatically checks the input option from the group of checkboxes
+selected attribute - automatically selects the input option from the set of dropdown options
+disabled attribute - greys out the input field and doesnt pass along information
+button attibute - creat button
+-->
+        <form method="post" action="https://request-inspector.glitch.me/">
+            <label for="name">Input Your Name: </label>
+            <input type="text" name="user" id="name" value="Name">
+
+            <label for="password"></label>
+            <input type="password" name="pw" id="password" placeholder="Password">
+            <input type="submit">
+            <br>
+
+            <label for="bodyText">Input text:</label>
+            <textarea name="bodyText" id="bodyText" cols="30" rows="10">Why are you here?</textarea>
+            <br>
+            <input type="checkbox" name="addToEmailList" id="addToEmailList" value="true" checked>
+            <label for="addToEmailList">I would like to receive emails about updates for this product in the future!</label>
+
+            <h2>How did you hear about us?</h2>
+            <input type="checkbox" value="billboard" name="capture" id="billboard">
+            <label for="billboard">Billboard</label>
+            <input type="checkbox" value="website" name="capture" id="website">
+            <label for="website">Website</label>
+            <input type="checkbox" value="tv" name="capture" id="tv">
+            <label for="tv">TV</label>
+
+            <br>
+            <h4>Which of these is the most correct: 4+"4"</h4>
+            <input type="radio" name="multipleChoice" value="A" id="A">
+            <label for="A">8</label>
+            <input type="radio" name="multipleChoice" value="B" id="B">
+            <label for="B">44</label>
+            <input type="radio" name="multipleChoice" value="C" id="C">
+            <label for="C">"44"</label>
+            <input type="radio" name="multipleChoice" value="D" id="D">
+            <label for="D">"8"</label>
+            <br>
+            <label for="dropdown">Select your browser:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="opera" >Opera</option>
+                <option value="netscape">Netscape Navigator</option>
+                <option value="aol" selected>America Online</option>
+                <option value="safari">Safari</option>
+            </select>
+
+            <input type="hidden" name="user-id" value="4355">
+            <button type="submit">Submit your form.</button>
+
+
+
+        </form>
+</body>
+</html>
