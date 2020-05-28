@@ -6,25 +6,26 @@
 
     </head>
     <body>
-    <!--
-
-    -->
             <h1>Register with Us</h1>
             <hr>
             <form method="post" action="https://www.elformo.com/forms/f8ebff92-477e-473b-ad25-79bc096eef53">
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="email" id="email" placeholder="Your Email Here">
 
-                <label for="password"></label>
-                <input type="password" name="pw" id="password" placeholder="Password">
+                <label for="password">Password:</label>
+                <input type="password" name="pw" id="password" placeholder="Your Password Here">
                 <br>
                 <br>
 
-                <label for="bio">Bio:</label>
-                <br>
-                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself!"></textarea>
+                <section>
+                    <label for="bio">Bio:</label>
+                    <br>
+                    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself!"></textarea>
+                </section>
 
+                <section>
                 <h2>How did you hear about us?</h2>
+                <!-- changed radio buttons to checkboxes to allow for multiple selections-->
                 <input type="checkbox" value="billboard" name="capture" id="billboard">
                 <label for="billboard">Billboard</label>
                 <input type="checkbox" value="internet" name="capture" id="internet">
@@ -33,8 +34,9 @@
                 <label for="radio">Radio Advertisement</label>
                 <input type="checkbox" value="other" name="capture" id="other">
                 <label for="other">Other</label>
+                </section>
                 <br>
-                <br>
+                <section>
                 <label for="dropdown">What internet browser are you using?</label>
                     <select name="dropdown" id="dropdown">
                         <option value="chrome">Google Chrome</option>
@@ -42,8 +44,7 @@
                         <option value="firefox">Mozilla Firefox</option>
                         <option value="ie">Internet Explorer</option>
                     </select>
-
-                <br>
+                </section>
                 <br>
                 <button type="submit">Submit your form</button>
             </form>
