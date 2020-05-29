@@ -23,8 +23,9 @@ The submit button's text should say "Buy Now!" -->
             <label for="card_number">Card Number</label>
             <input type="text" name="card_number" id="card_number" required>
             <br>
-            <label for="exp_month">Expiration Month</label>
-            <select name="exp_month" id="exp_month">
+            <p>Expiration Date</p>
+            <select name='expireMM' id='expireMM'>
+            <option value=''>Month</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -38,8 +39,8 @@ The submit button's text should say "Buy Now!" -->
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
-            <label for="exp_yr">Expiration Year</label>
             <select name="exp_yr" id="exp_yr">
+                <option value=''>Year</option>
                 <option value="2020">2020</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>

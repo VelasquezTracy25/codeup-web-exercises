@@ -1,0 +1,24 @@
+/* Style for heading elements */
+h1 {
+color: forestgreen;
+text-decoration: line-through;
+background-color: pink;
+}
+
+/*
+Multi
+Line
+Comments
+*/
+span {
+font-weight: bold;
+font-color: orange;
+}
+
+.fancy-heading {
+    color: darkorange;
+}
+
+.sky {
+    background-color: blue
+}
