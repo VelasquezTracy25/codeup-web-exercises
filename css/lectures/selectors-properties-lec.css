@@ -1,0 +1,93 @@
+body {
+    background-color:azure;
+    background-image: url("../img/background_img.jpeg");
+    background-repeat: no-repeat;
+    }
+
+/* Element Selector and Multiple Selector */
+h1, h2, h3, h4, h5, h6 {
+    color:red;
+    text-align:center;
+    }
+
+h2 {
+    background-color:pink;
+    }
+
+h6 {
+    text-decoration:underline;
+    }
+
+#paragraph-example p {
+    text-indent:30px;
+    font-size:2em;
+    font-weight: bolder;
+    font-style:italic;
+    font-kerning: 1px;}
+
+#list-examples ul{
+    list-style:upper-roman;
+   }
+
+/* Pseudo Classes*/
+a:link {
+    color:red;
+    }
+
+a:visited {
+    color:dodgerblue;
+    }
+
+a:hover {
+    color:black;
+    text-decoration: solid underline purple;
+    }
+
+a:active {
+    color:fuchsia;
+    }
+
+/* Class Selector*/
+.other-class {
+    font-family: sans-serif;
+    border: 2px solid #464b9e;
+    }
+.fancy-heading {
+    color: dimgray;
+    background-color:pink;
+    font-family: "helvetica";
+    }
+
+/* Combining Selectors*/
+h2.fancy-heading {
+    color:yellow
+    background:#333
+    }
+
+/* Descendant Selector */
+#headings-example h2 {
+    color:cadetblue;
+    background-color:black;}
+
+#div-example h2 {
+    color:darkmagenta}
+
+/*Direct Child Selector*/
+#headings-direct-child>div{
+    border: 5px solid palegoldenrod;
+    }
+
+/* ID Selector*/
+.fanciest-heading {
+    color:midnightblue;
+    background:burlywood;
+    font-family: 'Dancing Script', cursive;;
+}
+
+/*
+#id
+.class
+
+
+
+ */
