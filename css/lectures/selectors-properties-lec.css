@@ -1,6 +1,6 @@
 body {
     background-color:azure;
-    background-image: url("../img/background_img.jpeg");
+    background-image: url("../../img/background_img.jpeg");
     background-repeat: no-repeat;
     }
 
@@ -19,12 +19,10 @@ h6 {
     }
 
 #paragraph-example p {
-    text-indent:30px;
-    font-size:2em;
+    text-indent: 30px;
+    font-size: 2em;
     font-weight: bolder;
-    font-style:italic;
-    font-kerning: 1px;}
-
+}
 #list-examples ul{
     list-style:upper-roman;
    }
@@ -60,8 +58,8 @@ a:active {
 
 /* Combining Selectors*/
 h2.fancy-heading {
-    color:yellow
-    background:#333
+    color:yellow;
+    background:#333;
     }
 
 /* Descendant Selector */
