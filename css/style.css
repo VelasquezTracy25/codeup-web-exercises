@@ -1,17 +1,53 @@
 h1 {
-    text-align:center;
+    text-align:left;
+    font-family: 'Libre Baskerville', serif;
+    font-size:45px;
 }
 
 h1, h2 {
-    color:hotpink;
-    text-decoration: underline;
+    color:darkslategrey;
     }
 
+body, html {
+    height: 100%;
+}
+
+
+.top-banner {
+    width: 100%;
+    text-align:left;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    margin-top:200px;
+    text-align: left;
+    position:relative;
+    color: white;
+}
+
+.banner-img {
+    bottom: -800px;
+    margin
+}
+
+.btn{
+    background-color: #41518D;
+    border: solid black 1px;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+}
+
 body {
-    background-color:paleturquoise;
-    background-image: url("../img/background_img.jpeg");
+    clear:right;
+    background-color:#FD92A5;
+    /*background-image: url("https://images.pexels.com/photos/2255/black-and-white-city-houses-skyline.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");*/
     background-repeat: no-repeat;
     font-family: 'Bree Serif', serif;}
+
 
 #square-bullets ul {
     list-style:square;
