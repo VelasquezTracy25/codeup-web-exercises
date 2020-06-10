@@ -1,0 +1,100 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0 5px 0 5px;
+}
+
+ul {
+list-style:none; }
+
+
+h2 {
+font-weight: bold;}
+
+.form-control {
+margin-left: 15px;}
+
+.mobile-sign-up {
+    display: none;}
+
+
+.jumbotron {
+    background-image: url("../img/pizza.png");
+    background-size: 100%;
+    background-repeat:no-repeat;
+}
+
+div.container {
+    background-color: white;
+    width: 100%;
+    opacity: 70%;
+    color: black;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    }
+
+.card-header {
+color: white;
+background-color: #347BFF; }
+
+.card, .card-body, .card-header {
+width: 100%;}
+
+.card {
+margin-bottom: 20px;}
+
+div>.card-header {
+    background-color: #ECECEC;
+    color: black;
+}
+.dropdown-toggle, .dropdown-item {
+background-color: white;
+color:black;
+width: 100%;
+}
+
+.form-control {
+width: 98%;}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 5px 0 5px;
+    }
+
+    h1, h2 {
+        font-weight: bold;
+        font-size: 30px;
+        opacity: 100%;
+        text-align:center;
+    }
+
+    .sign-up {
+    display: none;}
+
+    .mobile-sign-up {
+    display: block;}
+
+    .jumbotron {
+        background-image: url("../img/pizza-responsive.jpeg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .nav {
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    margin: 10px;
+    }
+
+    .form-control {
+        margin-left: 0;}
+
+
+
+}
+
