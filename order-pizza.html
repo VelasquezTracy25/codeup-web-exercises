@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<body lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Pizza World | Order Pizza</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
+<body>
 <!--Navigation Start-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Pizza World</a>
@@ -31,8 +30,13 @@
                     <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search stores near you!</button>
                 </form>
             </li>
-            <li>Sign up</li>
         </ul>
+        <ul class="sign-up">
+            <li>Sign Up</li>
+        </ul>
+        <a href="#" class="btn btn-primary mobile-sign-up">Sign up</a>
+
+
     </div>
 </nav>
 <!--Navigation-->
@@ -50,12 +54,9 @@
 <!--Ordering Tabs Start-->
 <nav>
     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
-           aria-controls="nav-home" aria-selected="true"><span class="badge badge-pill badge-dark">1</span> Size and Crust</a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
-           aria-controls="nav-profile" aria-selected="false"><span class="badge badge-pill badge-dark">2</span> Cheese and Sauce</a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
-           aria-controls="nav-contact" aria-selected="false"><span class="badge badge-pill badge-dark">3</span> Toppings</a>
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="badge badge-pill badge-dark">1</span> Size and Crust</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="badge badge-pill badge-dark">2</span> Cheese and Sauce</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="badge badge-pill badge-dark">3</span> Toppings</a>
     </div>
 </nav>
 
@@ -87,6 +88,7 @@
                             <li class="list-group-item"><input type="radio"> Medium (12")</li>
                             <li class="list-group-item"><input type="radio"> Large (14")</li>
                         </ul>
+                        </ul>
                     </div>
                 </div>
                 <div class="card-footer text-muted">
@@ -105,16 +107,15 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">How much?</li>
-                            <li class="list-group-item">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#" >Regular</a>
-                                        <a class="dropdown-item" href="#">Normal</a>
-                                        <a class="dropdown-item" href="#">Extra</a>
-                                        <a class="dropdown-item" href="#">Double</a>
-                                    </div>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                        <option>Double</option>
+                                    </select>
                                 </div>
                             </li>
                         </ul>
@@ -125,25 +126,28 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">What type?</li>
-                            <li class="list-group-item">
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Sauces
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                        <a class="dropdown-item" href="#">Tomato</a>
-                                        <a class="dropdown-item" href="#">Marinara</a>
-                                        <a class="dropdown-item" href="#">BBQ</a>
-                                        <a class="dropdown-item" href="#">Alfredo</a>
-                                    </div>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Tomato Sauce</option>
+                                        <option>Marinara Sauce</option>
+                                        <option>BBQ Sauce</option>
+                                        <option>Alfredo Sauce</option>
+                                    </select>
                                 </div>
                             </li>
-
-                            <div class="dropdown">
-                                <li class="list-group-item">How Much?</li>
-                                <li class="list-group-item"><input type="radio"> Medium (12")</li>
-                                <li class="list-group-item"><input type="radio"> Large (14")</li>
-                            </div>
+                            <li class="list-group-item">How Much?</li>
+                            <li>
+                                <div class="form-group">
+                                    <label for="sel1"></label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Light</option>
+                                        <option>Normal</option>
+                                        <option>Extra</option>
+                                    </select>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -186,7 +190,7 @@
             </section>
         </div>
     </div>
-
+</section>
     <!--Content within Tabs End-->
     <!--JS-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -198,6 +202,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
-</section>
 </body>
 </html>
