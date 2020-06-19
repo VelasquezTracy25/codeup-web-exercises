@@ -9,8 +9,8 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
- function sayHello(name) {
- return ("Hello " + name + "!");
+ const sayHello = function(name) {
+ return "Hello, " + name + "!";
  }
 
 
@@ -21,11 +21,12 @@
 
 // Store the result of the function call in a variable named 'helloMessage'.
 
- let helloMessage = sayHello;
+ let helloMessage = sayHello("Hyperion");
 
  // console.log 'helloMessage' to check your work ********
 
- console.log(helloMessage());
+ console.log(helloMessage);
+
 
 /**
  * TODO:
@@ -36,8 +37,8 @@
 
  let myName= "Tracy"
 
-console.log(sayHello(myName));
-console.log(helloMessage(myName));
+helloMessage = (sayHello(myName));
+console.log(helloMessage);
 
 // Don't modify the following line, it generates a random number between 1 and 3 and stores it in a variable named random
 
@@ -57,18 +58,23 @@ var random = Math.floor((Math.random() * 3) + 1);
 // Call the function 'isTwo' passing the variable 'random' as a argument.
 //
 // console.log *outside of the function* to check your work (you should see a
-// different result everytime you refresh the page if you are using the random
+// different result every time you refresh the page if you are using the random
 // number)
 
-
+/*
 function isTwo(number) {
- return (number === 2)
+ return number === 2
 }
 
 isTwo(random)
 
 console.log(isTwo(random))
-
+console.log(isTwo(random))
+console.log(isTwo(random))
+console.log(isTwo(1))
+console.log(isTwo(2))
+console.log(isTwo(3))
+*/
 
 
 /**
@@ -81,13 +87,16 @@ console.log(isTwo(random))
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
-//  function calculateTip (percent,bill){
-//  console.log((percent*bill).toFixed(2)) }
-//
-// calculateTip(.20,20)
-// calculateTip(.25,25.50)
-// calculateTip(.15,33.42)
+/*
+ function calculateTip (percent,bill){
+ console.log((percent*bill).toFixed(2)) }
 
+calculateTip(.20,20)
+calculateTip(.25,25.50)
+calculateTip(.15,33.42)
+/*
+
+ */
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -95,9 +104,10 @@ console.log(isTwo(random))
  * then display the dollar amount they should tip
  */
 
-// let bill = prompt("What was your bill total for your meal?")
-// let percent = prompt("What percentage would you like to tip?")
+// let bill = (prompt("What was your bill total for your meal?"))
+// let percent = (prompt("What percentage would you like to tip? i.e. .2 for 20%"))
 // alert ("Your total bill is $" + (percent*bill).toFixed(2));
+//
 
 
 /**
@@ -119,4 +129,6 @@ function applyDiscount(originalPrice, discountPercent) {
 console.log(originalPrice-((originalPrice*discountPercent).toFixed(2)));
 }
 
+applyDiscount(100, 0.20)
 applyDiscount(45.99, 0.12)
+
