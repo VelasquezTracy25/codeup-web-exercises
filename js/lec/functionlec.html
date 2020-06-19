@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    printEvens("there we're done.");
+
+    function printEvens(message) {
+        console.log(2);
+        console.log(4);
+        console.log(6);
+        console.log(8);
+        console.log(10);
+        console.log(message);
+    }
+</script>
+<script>
+
+    function nameOfFunction(arg1, arg2) {
+        console.log("do something");
+        console.log("do something else");
+        }
+
+    let thing = nameOfFunction; // says calling "thing" will run "nameOfFunction"
+
+
+    thing(); // you call "thing", console will run "nameOfFunction" showing:
+                                                    // console.log("do something");
+                                                    // console.log("do something else");
+</script>
+
+
+<script>
+    let a = 4;
+    function firstSyntax() {
+        console.log("do something");
+        console.log("do something else");
+        console.log(a);
+    }
+    firstSyntax();
+
+    let secondSyntax = function () {
+        let a = 1234;
+        console.log("do something");
+        console.log("do something else");
+        console.log(a);
+    }
+    secondSyntax();
+
+    let thirdSyntax = function (a) {
+        console.log("do something");
+        console.log("do something else");
+        console.log(a);
+    }
+    thirdSyntax(1000);
+
+</script>
+</body>
+</html>
