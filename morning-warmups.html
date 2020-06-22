@@ -114,7 +114,7 @@
     console.log(isEven(10))
 
     // Thursday 6/18/2020 Print the first ten even numbers at least 3 times (preferably using different strategies)
-
+/*
     console.log(2)
     console.log(4)
     console.log(6)
@@ -144,7 +144,7 @@
     console.log(num);
     num+=2;
     console.log(num);
-    num+=2;
+    num+=2;*/
 
     // for (var i=2; i<=20; i++) {
     // if (isEven(i)) {
@@ -168,8 +168,43 @@
 
 countFromBy(5,2)
 
+// Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
 
 
+         // 1. As I see it, yes.
+         // 2. Ask again later.
+         // 3. Better not tell you now.
+         // 4. Cannot predict now.
+         // 5. Concentrate and ask again.
+         // 6. Don’t count on it.
+         // 7. Outlook not so good.
+         // 8. Outlook is good.
+
+
+    let num = prompt("Pick a number between 1-8 and ask a 'yes' or 'no' question.");
+function magic8Ball(num){
+        if (num === '1') {
+            alert("As I see it, yes.")
+        } else if (num === '2') {
+            alert("Ask again later..")
+        } else if (num === '3') {
+            alert("Better not tell you now.")
+        } else if (num === '4') {
+            alert("Cannot predict now..")
+        } else if (num === '5') {
+            alert("Concentrate and ask again.")
+        } else if (num === '6') {
+            alert("Don’t count on it.")
+        } else if (num === '7') {
+            alert("Outlook not so good.")
+        } else if (num === '8') {
+            alert("Outlook is good.")
+        } else {
+            alert("Enter a number between 1-8")
+        }
+}
+
+(magic8Ball(num);
 
 
     </script>
