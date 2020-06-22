@@ -185,7 +185,8 @@ if (luckyNum === 1) {
 if(notAWinner) {
     alert("Your lucky number is not a winner. Your total is $" + total)
 } else {
-    alert("Your lucky number is: " + luckyNum + ". Your original total of $" + total + " is now $" + newTotal + " with a "+discountPercent+" discount.")
+    alert("Your lucky number is: " + luckyNum + ". Your original total of $" + total + " is now $" + newTotal + " with a "+discountPercent+" discount.")}
+
 
 
 
