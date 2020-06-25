@@ -29,7 +29,8 @@ function analyzeColor(color) {
     }  else if (color === 'cyan') {
         console.log("I don't know anything about cyan")
     } else {
-        console.log("that's okay too")}
+        console.log("that's okay too")
+        }
 }
 
 analyzeColor('purple')
