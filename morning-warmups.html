@@ -182,29 +182,78 @@ countFromBy(5,2)
 
 
     let num = prompt("Pick a number between 1-8 and ask a 'yes' or 'no' question.");
-function magic8Ball(num){
-        if (num === '1') {
-            alert("As I see it, yes.")
-        } else if (num === '2') {
-            alert("Ask again later..")
-        } else if (num === '3') {
-            alert("Better not tell you now.")
-        } else if (num === '4') {
-            alert("Cannot predict now..")
-        } else if (num === '5') {
-            alert("Concentrate and ask again.")
-        } else if (num === '6') {
-            alert("Don’t count on it.")
-        } else if (num === '7') {
-            alert("Outlook not so good.")
-        } else if (num === '8') {
-            alert("Outlook is good.")
-        } else {
-            alert("Enter a number between 1-8")
-        }
+function magic8Ball(num) {
+    if (num === '1') {
+        alert("As I see it, yes.")
+    } else if (num === '2') {
+        alert("Ask again later..")
+    } else if (num === '3') {
+        alert("Better not tell you now.")
+    } else if (num === '4') {
+        alert("Cannot predict now..")
+    } else if (num === '5') {
+        alert("Concentrate and ask again.")
+    } else if (num === '6') {
+        alert("Don’t count on it.")
+    } else if (num === '7') {
+        alert("Outlook not so good.")
+    } else if (num === '8') {
+        alert("Outlook is good.")
+    } else {
+        alert("Enter a number between 1-8")
+    }
 }
 
-(magic8Ball(num);
+//Let var lights
+
+    let lights = "on";
+    let lightSwitch = function() {
+    if (lights === "on"){
+    lights = "off";
+    }else  {
+    lights = "on";
+    }
+    }
+
+    console.log("lights are " + lights);
+    lightSwitch();
+    console.log("lights are now " + lights);
+    lightSwitch();
+    console.log("lights are now " + lights);
+    lightSwitch();
+    console.log("lights are now " + lights);
+    lightSwitch();
+    console.log("lights are now " + lights);
+
+
+    //Write a JS function that will loop through the numbers 1-10 and output whether each is even or odd. Ie:
+    // 1 is odd
+    // 2 is even
+    // 3 ...
+    /*for (let i=1; i<=10; i++) {
+        if (i%2 === 0) {
+            console.log(i + " is even")
+        } else {
+            console.log(i + " is odd")
+        }
+    }
+     */
+
+    let countTo10 = function() {
+        let num = 1;
+        while (num <= 10) {
+            if (num % 2 === 0) {
+                console.log(num + " is even")
+            } else {
+                console.log(num + " is odd")
+            }
+            num++;
+        }
+    }
+
+    countTo10();
+
+
 
 
     </script>
