@@ -2,18 +2,18 @@
 
 let oddNum;
 
-do {
+while (true) {
     oddNum = prompt("Enter an odd number between 1 and 50.");
-    if (oddNum % 2 != 0 && oddNum >= 1 && oddNum <= 50) {
+    oddNum = parseInt(oddNum);
+    if (oddNum % 2 !== 0 && oddNum >= 1 && oddNum <= 50) {
         alert("Yay! That's an odd number!");
         break;
     }
     else
     {
         alert("That was not an odd number less than 50.");
-        continue;
     }
-} while (true);
+}
 
 
 //     Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
@@ -49,13 +49,12 @@ do {
 // Here is an odd number: 49
 
 let numberToSkip = 27
+let numbertoSkip = parseInt(numberToSkip)
+console.log("The number to skip is " + numberToSkip)
 
 for (let i = 1; i <= 50; i+=2) {
     if (i != numberToSkip) {
         console.log("Here is an odd number: " + i)
-        continue;
-    } else {
-        console.log("Yikes! Skipping number" + numberToSkip)
-        continue;
+    }console.log("Yikes! Skipping number" + numberToSkip)
     }
-}
+
