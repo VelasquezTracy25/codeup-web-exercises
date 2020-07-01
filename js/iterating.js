@@ -1,61 +1,61 @@
 (function(){
-    // "use strict";
-    //
-    // /**
-    //  * TODO:
-    //  * Create an array of 4 people's names and store it in a variable called
-    //  * 'names'.
-    //  */
-    //
-    //  let myOwnArray = ['Tracy', 26, "Brian", 28, "Ray", 32, "Alexa", 20];
-    //  console.log(myOwnArray)
-    //
-    // /**
-    //  * TODO:
-    //  * Create a log statement that will log the number of elements in the names
-    //  * array.
-    //  */
-    //
-    //  console.log(myOwnArray.length)
-    //
-    // /**
-    //  * TODO:
-    //  * Create log statements that will print each of the names individually by
-    //  * accessing each element's index.
-    //  */
-    //
-    // var notice = ("The shape at index 1 is: " + myOwnArray[1] + "/n" +
-    // "The shape at index 1 is: " + myOwnArray[1] + "/n" +
-    // "The shape at index 2 is: " + myOwnArray[2] + "/n" +
-    // "The shape at index 3 is: " + myOwnArray[3] + "/n" +
-    // "The shape at index 4 is: " + myOwnArray[4] + "/n" +
-    // "The shape at index 5 is: " + myOwnArray[5] + "/n" +
-    // "The shape at index 6 is: " + myOwnArray[6] + "/n" +
-    // "The shape at index 7 is: " + myOwnArray[7] + "/n" +
-    // "The shape at index 8 is: " + myOwnArray[8])
-    //
-    // console.log(notice)
-    //
-    //
-    // /**
-    //  * TODO:
-    //  * Write some code that uses a for loop to log every item in the names
-    //  * array.
-    //  */
-    //
-    // for (let i = 0; i < myOwnArray.length; i++) {
-    //     console.log('The shape at index ' + i + " is " + myOwnArray[i] + ".")
-    // }
-    //
-    // /**
-    //  * TODO:
-    //  * Refactor your above code to use a `forEach` loop
-    //  */
-    //
-    //  myOwnArray.forEach(myOwnFunction); //"for each time i call this function"
-    //
-    //  function myOwnFunction(buddy, index) {
-    //      console.log('The shape at index ' + index + " is " + buddy + ".")}
+    "use strict";
+
+    /**
+     * TODO:
+     * Create an array of 4 people's names and store it in a variable called
+     * 'names'.
+     */
+
+     let myOwnArray = ['Tracy', 26, "Brian", 28, "Ray", 32, "Alexa", 20];
+     console.log(myOwnArray)
+
+    /**
+     * TODO:
+     * Create a log statement that will log the number of elements in the names
+     * array.
+     */
+
+     console.log(myOwnArray.length)
+
+    /**
+     * TODO:
+     * Create log statements that will print each of the names individually by
+     * accessing each element's index.
+     */
+
+    var notice = ("The shape at index 1 is: " + myOwnArray[1] + "/n" +
+    "The shape at index 1 is: " + myOwnArray[1] + "/n" +
+    "The shape at index 2 is: " + myOwnArray[2] + "/n" +
+    "The shape at index 3 is: " + myOwnArray[3] + "/n" +
+    "The shape at index 4 is: " + myOwnArray[4] + "/n" +
+    "The shape at index 5 is: " + myOwnArray[5] + "/n" +
+    "The shape at index 6 is: " + myOwnArray[6] + "/n" +
+    "The shape at index 7 is: " + myOwnArray[7] + "/n" +
+    "The shape at index 8 is: " + myOwnArray[8])
+
+    console.log(notice)
+
+
+    /**
+     * TODO:
+     * Write some code that uses a for loop to log every item in the names
+     * array.
+     */
+
+    for (let i = 0; i < myOwnArray.length; i++) {
+        console.log('The shape at index ' + i + " is " + myOwnArray[i] + ".")
+    }
+
+    /**
+     * TODO:
+     * Refactor your above code to use a `forEach` loop
+     */
+
+     myOwnArray.forEach(myOwnFunction); //"for each time i call this function"
+
+     function myOwnFunction(buddy, index) {
+         console.log('The shape at index ' + index + " is " + buddy + ".")}
 
     /**
      * TODO:
@@ -73,28 +73,24 @@
 
     let params = [1, 2, 3, 4, 5]
 
-
     // below returns 1
-
-    function first(params){
-        console.log(params[0])
+    let first = function() {
+        return params[0]
     }
 
     // below returns 2
+    let second = function() {
+        return params[1]
+        }
 
-    function second(params){
-        console.log(params[1])
+    // below return 5
+    let last = function() {
+        return params[params.length - 1]
     }
 
-     // below return 5
-    function last(params){
-        console.log(params[4])
-    }
-
-console.log(first())
-
-
-
+    console.log(first() + " - should return 1")
+    console.log(second() + " - should return 2")
+    console.log(last() + " - should return 5")
 
 
 })();
