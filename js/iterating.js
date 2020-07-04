@@ -7,8 +7,8 @@
      * 'names'.
      */
 
-     let myOwnArray = ['Tracy', 26, "Brian", 28, "Ray", 32, "Alexa", 20];
-     console.log(myOwnArray)
+     let names = ['Tracy', "Brian", "Ray", "Alexa"];
+     console.log(names)
 
     /**
      * TODO:
@@ -16,7 +16,7 @@
      * array.
      */
 
-     console.log(myOwnArray.length)
+     console.log(names.length)
 
     /**
      * TODO:
@@ -24,17 +24,10 @@
      * accessing each element's index.
      */
 
-    var notice = ("The shape at index 1 is: " + myOwnArray[1] + "/n" +
-    "The shape at index 1 is: " + myOwnArray[1] + "/n" +
-    "The shape at index 2 is: " + myOwnArray[2] + "/n" +
-    "The shape at index 3 is: " + myOwnArray[3] + "/n" +
-    "The shape at index 4 is: " + myOwnArray[4] + "/n" +
-    "The shape at index 5 is: " + myOwnArray[5] + "/n" +
-    "The shape at index 6 is: " + myOwnArray[6] + "/n" +
-    "The shape at index 7 is: " + myOwnArray[7] + "/n" +
-    "The shape at index 8 is: " + myOwnArray[8])
-
-    console.log(notice)
+    console.log("The shape at index 1 is: " + names[0])
+    console.log("The shape at index 1 is: " + names[1])
+    console.log("The shape at index 1 is: " + names[2])
+    console.log("The shape at index 1 is: " + names[3])
 
 
     /**
@@ -43,8 +36,8 @@
      * array.
      */
 
-    for (let i = 0; i < myOwnArray.length; i++) {
-        console.log('The shape at index ' + i + " is " + myOwnArray[i] + ".")
+    for (let i = 0; i < names.length; i++) {
+        console.log('The names at index ' + i + " is " + names[i] + ".")
     }
 
     /**
@@ -52,7 +45,7 @@
      * Refactor your above code to use a `forEach` loop
      */
 
-     myOwnArray.forEach(myOwnFunction); //"for each time i call this function"
+     names.forEach(myOwnFunction); //"for each time i call this function"
 
      function myOwnFunction(buddy, index) {
          console.log('The shape at index ' + index + " is " + buddy + ".")}
@@ -71,21 +64,21 @@
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-    let params = [1, 2, 3, 4, 5]
+    let elements = [1, 2, 3, 4, 5]
 
     // below returns 1
     let first = function() {
-        return params[0]
+        return elements[0]
     }
 
     // below returns 2
     let second = function() {
-        return params[1]
+        return elements[1]
         }
 
     // below return 5
     let last = function() {
-        return params[params.length - 1]
+        return elements[elements.length - 1]
     }
 
     console.log(first() + " - should return 1")
