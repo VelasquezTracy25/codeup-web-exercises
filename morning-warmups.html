@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
+<script>
 
     //Mon. 6/1/2020 - Write a JavaScript function that takes in a number and returns the number multiplied by 5.
 
@@ -19,7 +19,7 @@
 
     //Tues. 6/2/2020 - Write a function that sings “Happy Birthday”. Make it sing to whoever’s birthday it is.
     function happyBirthdayTo(name) {
-    console.log('Happy Birthday to you,');
+        console.log('Happy Birthday to you,');
         console.log('Happy Birthday to you,');
         console.log('Happy Birthday to you,');
         console.log('Happy Birthday Dear ' + name);
@@ -29,26 +29,27 @@
     console.log(happyBirthdayTo("Tracy"));
 
     // Wed. 6/3/2020 - Write a js function that will take in a number and count from there count the next 5 numbers.
-    function keepCounting(num){
-    console.log(num, num + 1, num + 2, num + 3, num + 4)
-    console.log(num);
-    console.log(num + 1);
-    console.log(num + 2);
-    console.log(num + 3);
-    console.log(num + 4);
+    function keepCounting(num) {
+        console.log(num, num + 1, num + 2, num + 3, num + 4)
+        console.log(num);
+        console.log(num + 1);
+        console.log(num + 2);
+        console.log(num + 3);
+        console.log(num + 4);
     }
 
     console.log(keepCounting(5));
 
     //Thur. 6/4/2020 - Write a function that returns the number 7.
-    function returnsSeven(){
-        return 7}
+    function returnsSeven() {
+        return 7
+    }
 
     console.log(returnsSeven())
 
     //Mon. 6/8/2020 - Write a JavaScript function that returns the length of a string passed through it.
 
-    function stringLength(string){
+    function stringLength(string) {
         return string.length;
     }
 
@@ -64,7 +65,7 @@
 
     //Wednesday 6/10/2020 Write a JavaScript function that will return the diameter of a circle with a radius of the circle passed through it.
 
-    function circleDiameter(rad){
+    function circleDiameter(rad) {
         return rad * 2;
     }
 
@@ -89,16 +90,16 @@
 
 
     //Monday 6/15/2020 Write a JS function that returns the argument passed.
-        function returnArgument(param) {
-            return param;
-            }
+    function returnArgument(param) {
+        return param;
+    }
 
-     console.log(returnArgument("1+1=2"))
+    console.log(returnArgument("1+1=2"))
 
     //Tuesday 6/16/2020 Write a JS function that returns a string representing the type of the argument passed through it.
 
     function returnType(input) {
-        return typeof(input);
+        return typeof (input);
     }
 
     console.log(returnType(1))
@@ -114,37 +115,37 @@
     console.log(isEven(10))
 
     // Thursday 6/18/2020 Print the first ten even numbers at least 3 times (preferably using different strategies)
-/*
-    console.log(2)
-    console.log(4)
-    console.log(6)
-    console.log(8)
-    console.log(10)
-    console.log(12)
-    console.log(14)
-    console.log(16)
-    console.log(18)
-    console.log(20)
+    /*
+        console.log(2)
+        console.log(4)
+        console.log(6)
+        console.log(8)
+        console.log(10)
+        console.log(12)
+        console.log(14)
+        console.log(16)
+        console.log(18)
+        console.log(20)
 
-    var num = 2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;
-    console.log(num);
-    num+=2;*/
+        var num = 2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;
+        console.log(num);
+        num+=2;*/
 
     // for (var i=2; i<=20; i++) {
     // if (isEven(i)) {
@@ -158,61 +159,62 @@
     // 25
     // 30
 
-    const countFromBy = function(from,by) {
-    console.log(from)
-    console.log(from + by)
-    console.log(from + (2 *by))
-    console.log(from + (3 *by))
-    console.log(from + (4 *by))
+    const countFromBy = function (from, by) {
+        console.log(from)
+        console.log(from + by)
+        console.log(from + (2 * by))
+        console.log(from + (3 * by))
+        console.log(from + (4 * by))
     }
 
-countFromBy(5,2)
+    countFromBy(5, 2)
 
-// Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
+    // Write a JS function called magic8Ball that takes in one number as a parameter. The return value should be one of the following strings that correlates to the number passed in.
 
 
-         // 1. As I see it, yes.
-         // 2. Ask again later.
-         // 3. Better not tell you now.
-         // 4. Cannot predict now.
-         // 5. Concentrate and ask again.
-         // 6. Don’t count on it.
-         // 7. Outlook not so good.
-         // 8. Outlook is good.
+    // 1. As I see it, yes.
+    // 2. Ask again later.
+    // 3. Better not tell you now.
+    // 4. Cannot predict now.
+    // 5. Concentrate and ask again.
+    // 6. Don’t count on it.
+    // 7. Outlook not so good.
+    // 8. Outlook is good.
 
 
     let num = prompt("Pick a number between 1-8 and ask a 'yes' or 'no' question.");
-function magic8Ball(num) {
-    if (num === '1') {
-        alert("As I see it, yes.")
-    } else if (num === '2') {
-        alert("Ask again later..")
-    } else if (num === '3') {
-        alert("Better not tell you now.")
-    } else if (num === '4') {
-        alert("Cannot predict now..")
-    } else if (num === '5') {
-        alert("Concentrate and ask again.")
-    } else if (num === '6') {
-        alert("Don’t count on it.")
-    } else if (num === '7') {
-        alert("Outlook not so good.")
-    } else if (num === '8') {
-        alert("Outlook is good.")
-    } else {
-        alert("Enter a number between 1-8")
-    }
-}
 
-//Let var lights
+    function magic8Ball(num) {
+        if (num === '1') {
+            alert("As I see it, yes.")
+        } else if (num === '2') {
+            alert("Ask again later..")
+        } else if (num === '3') {
+            alert("Better not tell you now.")
+        } else if (num === '4') {
+            alert("Cannot predict now..")
+        } else if (num === '5') {
+            alert("Concentrate and ask again.")
+        } else if (num === '6') {
+            alert("Don’t count on it.")
+        } else if (num === '7') {
+            alert("Outlook not so good.")
+        } else if (num === '8') {
+            alert("Outlook is good.")
+        } else {
+            alert("Enter a number between 1-8")
+        }
+    }
+
+    //Let var lights
 
     let lights = "on";
-    let lightSwitch = function() {
-    if (lights === "on"){
-    lights = "off";
-    }else  {
-    lights = "on";
-    }
+    let lightSwitch = function () {
+        if (lights === "on") {
+            lights = "off";
+        } else {
+            lights = "on";
+        }
     }
 
     console.log("lights are " + lights);
@@ -239,7 +241,7 @@ function magic8Ball(num) {
     }
      */
 
-    let countTo10 = function() {
+    let countTo10 = function () {
         let num = 1;
         while (num <= 10) {
             if (num % 2 === 0) {
@@ -254,31 +256,44 @@ function magic8Ball(num) {
     countTo10();
 
     // July 1 -Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
-/*
-    doubleChar("String") ==> "SSttrriinngg"
+    /*
+        doubleChar("String") ==> "SSttrriinngg"
 
-    doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+        doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
 
-    doubleChar("1234!_ ") ==> "11223344!!__  "
+        doubleChar("1234!_ ") ==> "11223344!!__  "
 
-    Pseudo-code
-    Define a function with the name doubleChar(“string”)
-    It should return typeof string
-    Create a new variable to hold the returnString
-    Loop (for, while, do while loops) through the parameter and check each character ([index]), concat that character twice to the returnString
-    Return the returnString
- */
+        Pseudo-code
+        Define a function with the name doubleChar(“string”)
+        It should return typeof string
+        Create a new variable to hold the returnString
+        Loop (for, while, do while loops) through the parameter and check each character ([index]), concat that character twice to the returnString
+        Return the returnString
+     */
 
- let doubleChar(param) = function() {
+    // July 6 - Fizzbuzz
+
+    (function () {
+        "use strict"
+        let fizzbuzz = function (num) {
+            for (let i=1; i<=num; i++){
+                if (i % 3 === 0 && i % 5 === 0) {
+                    console.log("Fizzbuzz");
+                } else
+                if (i % 3 === 0) {
+                    console.log("Fizz");
+                } else
+                if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else {
+                    console.log(i);
+                }
+            }
+        }
+        fizzbuzz(31)
+    })();
 
 
-
- }
-
- doubleChar('string')
-
-
-
-    </script>
+</script>
 </body>
 </html>
