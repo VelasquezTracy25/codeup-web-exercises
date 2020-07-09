@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM: Query and Modify</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -14,6 +17,15 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+
+<button type="button" class="btn btn-primary" id="btn-1">Print JS is Cool</button>
+<button type="button" class="btn btn-secondary" id="btn-2">Make subHeader Blue</button>
+<button type="button" class="btn btn-success" id="btn-3">Make LIs alternate</button>
+<button type="button" class="btn btn-danger" id="btn-4">Make first LI blue</button>
+
+<br>
+<br>
+
 <h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -56,8 +68,10 @@
 </p>
 
 <script>
-    (function() {
-        "use strict";
+
+    "use strict";
+    (function () {
+
 
         // MINI LAB
         // Create an <p> tag with the id='demo'
@@ -82,11 +96,12 @@
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
 
-        mainHeader.innerHTML = "JavaScript is Cool!"  ;
+        // Prints "JavaScript is Cool!" and changes the H1 to display "JavaScript is Cool!" even though hardcoded HTML still shows "Hello World!"
 
-        console.log(mainHeader.innerHTML); // Prints "JavaScript is Cool!" and changes the H1 to display "JavaScript is Cool!" even though hardcoded HTML still shows "Hello World!"
-
-
+        // register the mainheaderclick listener to handle clicks on the first button
+        document.getElementById('btn-1').addEventListener('click', function (){
+            mainHeader.innerHTML = "JavaScript is Cool!";
+        });
 
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById('sub-header');
@@ -95,7 +110,16 @@
 
 
         // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = 'blue' //Changes Hello Again to blue.
+
+        //Changes Hello Again to blue.
+        var subHeaderClick = function (event) {
+            subHeader.style.color = 'blue';
+        }
+
+        document.getElementById('btn-2').addEventListener('click', subHeaderClick);
+
+        // subHeader.style.color = 'blue' //Changes Hello Again to blue.
+
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
@@ -113,25 +137,29 @@
 
         // TODO: Set text color on every other list item to grey
 
-        for (var i = 0; i < listItems.length; i++) {
-        if ((i+1) % 2 == 0) {
-            listItems[i].style.color = 'grey';
-        } else {
-            listItems[i].style.color = 'pink';
-        }
-        }
+
+
+        document.getElementById('btn-3').addEventListener('click', function () {
+            for (var i = 0; i < listItems.length; i++) {
+                if ((i + 1) % 2 == 0) {
+                    listItems[i].style.color = 'grey';
+                } else {
+                    listItems[i].style.color = 'pink';
+                }
+            }
+        });
+
+
 
         // Loop goes through array and when i(the list item) is even it makes it blue, and when it is odd it makes it pink.
 
         // TODO: Set text color of li with dbid = 1 to blue
 
 
-        var firstLI = listItems[0]
+        document.getElementById('btn-4').addEventListener('click', function () {
+            listItems[0].style.color = 'blue';
+        });
 
-        console.log(firstLI)
-
-        // changed color of variable to blue
-        firstLI.style.color = "blue"
 
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
@@ -143,9 +171,9 @@
 
         subParagraphs[0].innerHTML = "<em>Mission Accomplished!</em>";
 
-
-
     })();
+
+
 </script>
 </body>
 </html>
