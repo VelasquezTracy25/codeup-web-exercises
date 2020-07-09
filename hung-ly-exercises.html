@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>DOM Exercise #1</h1>
+<p id="red-text">TODO: Change my text red!</p>
+<p id="bold-font">TODO: Make this text bold</p>
+<p id="helvetica-font">TODO: Make my font 'Helvetica'</p>
+<p class="log-me">TODO: Console log my innerHTML content to the console</p>
+<p class="log-me">TODO: Console log my outerHTML content to the console</p>
+<p class="log-me">TODO: Console log my class name to the console</p>
+<p class="log-me" id="i-have-an-id">TODO: Console log my attributes to the console</p>
+<h1>TODO: Replace all of these movies with your own top 3 movies using DOM</h1>
+<ol>
+    <li id="movie-1">Forrest Gump</li>
+    <li id="movie-2">Batman: The Dark Knight</li>
+    <li id="movie-3">Inception</li>
+</ol>
+
+<script>
+//DOM Exercise #1 Responses
+
+//<p id="red-text">TODO: Change my text red!</p>
+
+var redP = document.getElementById('red-text');
+redP.style.color = 'red';
+
+//<p id="bold-font">TODO: Make this text bold</p>
+
+var boldP = document.getElementsByTagName('p')[1];
+boldP.style.fontWeight = 'bold';
+
+//<p id="helvetica-font">TODO: Make my font 'Helvetica'</p>
+
+var helveticaP = document.getElementsByTagName('p')[2];
+helveticaP.style.fontFamily = 'Helvetica';
+
+// <p class="log-me"> TODO: Console log my innerHTML content to the console</p>
+
+var logMe1 = document.getElementsByClassName('log-me')[0]
+console.log(logMe1.innerHTML);
+
+// <p class="log-me">TODO: Console log my outerHTML content to the console</p>
+
+var logMe2 = document.getElementsByClassName('log-me')[1]
+console.log(logMe2.outerHTML);
+
+// <p class="log-me">TODO: Console log my class name to the console</p>
+
+var logMe3 = document.getElementsByClassName('log-me')[2]
+console.log("the class name is " + logMe3.className);
+
+
+// <p class="log-me" id="i-have-an-id">TODO: Console log my attributes to the console</p>
+
+var logMe4 = document.getElementsByClassName('log-me')[3]
+console.log("the attributes are " +logMe4.id);
+
+
+
+// <h1>TODO: Replace all of these movies with your own top 3 movies using DOM</h1>
+
+// <ol>
+// <li id="movie-1">Forrest Gump</li>
+// <li id="movie-2">Batman: The Dark Knight</li>
+// <li id="movie-3">Inception</li>
+//</ol>
+
+
+//Movie 1
+var movie1 = document.getElementById('movie-1');
+movie1.innerHTML = "Some Like It Hot";
+movie1.style.color = "purple";
+
+//Movie 2
+var movie2 = document.getElementById('movie-2');
+movie2.innerHTML = "Moulin Rouge";
+movie2.style.color = "purple";
+
+//Movie 3
+var movie3 = document.getElementById('movie-3');
+movie3.innerHTML = "Miss Pettigrew Lives for a Day";
+movie3.style.color = "purple";
+
+
+
+
+
+//DOM Exercise #1 Responses End
+
+//TODO: Write a function that loops through a string. For each character in the string that is a vowel (aeiou/AEIOU), add it to an array and return the array
+
+
+function(srting){
+for (){
+
+}}
+
+
+//TODO: Write a function that checks if someone is 21 or older. If they are over 21, return true. Otherwise return false.
+
+function over21(age) {
+    if (age >= 21) {
+        return true
+    } else {
+        return false
+    }
+}
+
+console.log(over21(10));
+console.log(over21(21));
+console.log(over21(33));
+
+
+
+//TODO: Write a function that will set an interval that counts down from 10 at 1second intervals. Every count should be logged to the console. If the count reaches zero, then return an alert that says 'lift off!'
+
+
+var count = 11;
+var min = 1;
+var interval = 1000;
+
+var tilLiftOff = setInterval (function() {
+    if (count <= min){
+        clearInterval(tilLiftOff);
+        console.log("lift off!")
+    } else{
+        count--;
+        console.log(count)
+    }
+},interval)
+
+console.log(tilLiftOff)
+
+
+//TODO: Given the following array of objects, write a function that takes in the array and return the object that costs the most money.
+
+
+var storeItems = [
+{
+name: 'hammer',
+price: 10.99
+},
+{
+name: 'macbook',
+price: 1599.99
+},
+{
+name: 'chair',
+price: 35.99
+},
+{
+name: 'bike',
+price: 140.99
+}
+];
+
+
+
+</script>
+
+
+
+</body>
+</html>
