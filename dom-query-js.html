@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+</head>
+<body>
+
+<h1 id="main-header">Hello World!</h1>
+<ul>
+    <li data-dbid="1">Item 1</li>
+    <li data-dbid="2">Item 2</li>
+    <li data-dbid="3">Item 3</li>
+    <li data-dbid="4">Item 4</li>
+    <li data-dbid="5">Item 5</li>
+</ul>
+<h2 id="sub-header">Hello Again.</h2>
+<p class="sub-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="sub-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="sub-paragraph" id="demo2" data-dbid="demo2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<p class="sub-paragraph" id="demo1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<script>
+    (function() {
+        "use strict";
+
+        // MINI LAB
+        // Create an <p> tag with the id='demo'
+        // Change the font-size to 6rem;'
+        // Create a <p> tag with the id='demo2' and a data-* attribute
+        // Log the attribute to the console log or alert it.
+
+        var demo1 = document.getElementById('demo1');
+        // demo1.style.fontSize = '6rem' //font size can be changed manually
+        demo1.setAttribute('style', 'font-Size: 6rem'); //or font size can be changed with attribute
+
+
+        var demo2 = document.getElementById('demo2');
+        var dbId = demo2.getAttribute("data-dbid");
+        console.log(dbId);
+
+        // TODO: Uncomment next line and get the main header element by id
+        var mainHeader = document.getElementById('main-header');
+
+        console.log(mainHeader.innerHTML); // Prints Hello World!
+
+
+        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+
+        mainHeader.innerHTML = "JavaScript is Cool!"  ;
+
+        console.log(mainHeader.innerHTML); // Prints "JavaScript is Cool!" and changes the H1 to display "JavaScript is Cool!" even though hardcoded HTML still shows "Hello World!"
+
+
+
+        // TODO: Uncomment the next line and get the sub header element by id
+        var subHeader = document.getElementById('sub-header');
+
+        console.log(subHeader.innerHTML); // Prints Hello Again.
+
+
+        // TODO: Set the text color of subHeader to blue
+        subHeader.style.color = 'blue' //Changes Hello Again to blue.
+
+        // TODO: Uncomment the next line and get all list items
+        var listItems = document.getElementsByTagName('li');
+
+        console.log(listItems); //Prints array with each li broken up into all kinds of stuff
+        console.log(listItems[0]); //Prints first list item
+        console.log(listItems[1]); //Prints second list item
+        console.log(listItems[2]); //Prints third list item
+        console.log(listItems[3]); //Prints fourth list item
+        console.log(listItems[4]); //Prints fifth list item
+        //For loop that prints all list items. (Same as console logging each one individually like above.
+        for (var i = 0; i < listItems.length; i++) {
+            console.log(listItems[i]);
+        }
+
+        // TODO: Set text color on every other list item to grey
+
+        for (var i = 0; i < listItems.length; i++) {
+        if ((i+1) % 2 == 0) {
+            listItems[i].style.color = 'grey';
+        } else {
+            listItems[i].style.color = 'pink';
+        }
+        }
+
+        // Loop goes through array and when i(the list item) is even it makes it blue, and when it is odd it makes it pink.
+
+        // TODO: Set text color of li with dbid = 1 to blue
+
+
+        var firstLI = listItems[0]
+
+        console.log(firstLI)
+
+        // changed color of variable to blue
+        firstLI.style.color = "blue"
+
+
+        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+        var subParagraphs = document.getElementsByClassName('sub-paragraph');
+
+        console.log(subParagraphs) // display an array of subParagraphs (4)
+
+        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+
+        subParagraphs[0].innerHTML = "<em>Mission Accomplished!</em>";
+
+
+
+    })();
+</script>
+</body>
+</html>
