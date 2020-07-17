@@ -316,6 +316,32 @@
     })();
 
 
+
+    //July 13 - Fibonacci Sequence (my attempt - not correct lol)
+
+    let fibonacci = function(num) {
+        let output = [0,1];
+        let i = output.length;
+        while (i<num) {
+            output.push(output[output.length - 2] + output[output.length - 1]);
+            i++;
+        }
+        return output;
+    }
+    console.log(fibonacci(9));
+
+    //July 14 - write a function that returns the number in the 10s spot
+
+
+    function returnTensSpot(num) {
+        var numArray = (parseInt(toString(num)).split(""));
+        return [numArray.length -2]
+    }
+
+    console.log(returnTensSpot(345));
+    console.log(returnTensSpot(345450));
+    console.log(returnTensSpot(3445778665));
+
 </script>
 </body>
 </html>

@@ -94,22 +94,34 @@ movie3.style.color = "purple";
 
 //TODO: Write a function that loops through a string. For each character in the string that is a vowel (aeiou/AEIOU), add it to an array and return the array
 
+function arrayVowels(str) {
+    var array = [];
+    var vowels = 'aeiouAEIOU';
+    for (var i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            array.push(str[i])
+        }
+    }
+    return array;
+}
 
-function(srting){
-for (){
-
-}}
 
 
 //TODO: Write a function that checks if someone is 21 or older. If they are over 21, return true. Otherwise return false.
 
-function over21(age) {
-    if (age >= 21) {
-        return true
-    } else {
-        return false
-    }
+// function over21(age) {
+//     if (age >= 21) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+
+// /shorter/easier version
+function is21(age) {
+    return age >= 21;
 }
+
 
 console.log(over21(10));
 console.log(over21(21));
@@ -158,6 +170,17 @@ name: 'bike',
 price: 140.99
 }
 ];
+
+function mostExpensive(array) {
+    var highest = array[0];
+    array.forEach(function (item) {
+        if (item.price > highest.price) {
+            highest = item;
+        }
+    })
+    return highest;
+}
+
 
 
 

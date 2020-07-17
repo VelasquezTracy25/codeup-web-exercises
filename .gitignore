@@ -1,5 +1,4 @@
 .idea/*
 *.iml
 .DS_STORE
-bonuses/confessions.txt
 keys.js
