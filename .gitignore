@@ -2,3 +2,5 @@
 *.iml
 .DS_STORE
 keys.js
+bonuses
+tests

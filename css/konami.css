@@ -1,0 +1,117 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url("../img/konami/sun-static.png");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    background: linear-gradient(to bottom, #f60074 0%, mediumpurple 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 180px;
+    margin: 0;
+
+
+}
+
+/*span {*/
+/*    font-family: 'VT323', monospace;*/
+
+/*}*/
+
+#cheat-content {
+margin-top:20px;}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #00DCB4;
+}
+
+#start {
+    height: 1000px;
+    width: 1800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.blinking {
+    animation: blinkingText 1.2s infinite;
+    font-family: 'VT323', monospace;
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+@keyframes blinkingText {
+    0% {
+        color: #00DCB4;
+    }
+    49% {
+        color: #00DCB4;
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: #00DCB4;
+    }
+}
+
+@keyframes cat-gif {
+    0% {
+        background-image: url('../img/konami/sleeping-cat-2.png')
+    }
+    100% {
+        background-image: url('../img/konami/sleeping-cat-1.png')
+    }
+}
+
+#cat-gif {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 60px;
+    right: 75px;
+    background-image: url("../img/konami/sleeping-cat-2.png");
+    background-repeat: no-repeat;
+    animation-name: cat-gif;
+    animation-duration: 1s;
+    animation-iteration-count: 100000;
+}
+
+
+@keyframes cat-night {
+    0% {
+        background-image: url('../img/konami/running-cat-2.png');
+    }
+    100% {
+        background-image: url('../img/konami/running-cat-1.png');
+    }
+
+}
+
+#cat-night {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 60px;
+    right: 75px;
+    background-image: url("../img/konami/running-cat-2.png");
+    background-repeat: no-repeat;
+    animation-name: cat-night;
+    animation-duration: 1s;
+    animation-iteration-count: 10000;
+
+}

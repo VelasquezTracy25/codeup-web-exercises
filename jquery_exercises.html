@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>jQuery Intro</title>
+    <style>
+        .pink {
+        background-color:pink;}
+    </style>
 </head>
 <body>
 
 <h1> We are learning jQuery in 2020!</h1>
 
-<p class="lorem" id="even">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+<p class="lorem codeup" id="even">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
 
 <p class="odd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt officiis possimus veritatis.</p>
 
@@ -17,25 +21,51 @@
 <p class="odd" id="even1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt officiis possimus veritatis.</p>
 
 <ul>
-    <li>Item 1</li>
+    <li class="codeup">Item 1</li>
     <li>Item 2</li>
-    <li>Item 3</li>
+    <li class="codeup">Item 3</li>
     <li>Item 4</li>
 </ul>
 
 
-<script src="../js/jquery-3.5.1.js"></script>
+<script src="js/jquery-3.5.1.js"></script>
 <script>
-    $(document).ready(function() {
-        alert("Ready to go!")
-    })
+    // $(document).ready(function() {alert("Ready to go!")})
+    // $('h1').css({background:'purple'});
+    // $('p').css({backgroundColor:'skyblue'});
+    // jQuery('.odd').css({textDecoration:'underline'})
+    // $('.lorem').css({backgroundColor:'lightgrey'});
+    // $('#even').css({backgroundColor:'lightgrey'});
+    // // $('*').css('border', '1px black solid');
+    // $('*').css({backgroundColor:'lightgrey'});
+    // $('li').dblclick(function(){
+    // $('#panel2').addClass('.pink')})
+    //
+    // $( selector ).click( handler )
+    //
+    // $('li').hover(
+    //     function() {
+    //         $(this).css('color', 'red');
+    //     },
+    //     function() {
+    //         $(this).css('color', 'black');
+    //     }
+    // )
 
-    $('h1').css({background:'yellow'});
-    $('p').css({backgroundColor:'skyblue'});
-    jQuery('.lorem').css({textDecoration:'underline'})
-    $('.odd').css({backgroundColor:'lightgrey'});
-    $('*').css({backgroundColor:'lightgrey'});
-    // $('.odd').css('border:'lightgrey'});
+
+    setInterval(function () {
+        $('li').css('text-decoration', 'strikethrough');
+    }, 1000)
+    })
+    ;
+
+
+
+
+
+
+
+
 </script>
 </body>
 </html>

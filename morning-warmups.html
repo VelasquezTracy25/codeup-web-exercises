@@ -332,15 +332,71 @@
 
     //July 14 - write a function that returns the number in the 10s spot
 
+    //
+    // function returnTensSpot(num) {
+    //     var numArray = (parseInt(toString(num)).split(""));
+    //     return [numArray.length -2]
+    // }
+    //
+    // console.log(returnTensSpot(345));
+    // console.log(returnTensSpot(345450));
+    // console.log(returnTensSpot(3445778665));
 
-    function returnTensSpot(num) {
-        var numArray = (parseInt(toString(num)).split(""));
-        return [numArray.length -2]
+
+// Jul 17 - 	Write a function that will return an array passed sorted in reverse alphabetical order, when passed an array of strings. It should return null if any element within the array is not a string.
+
+    function reverseAlphaArray(arr){
+        for (let i=0; i<arr.length; i++){
+            if (typeof arr[i] !== "string")
+                return null;
+        }
+        return arr.sort().reverse()
     }
 
-    console.log(returnTensSpot(345));
-    console.log(returnTensSpot(345450));
-    console.log(returnTensSpot(3445778665));
+    console.log(reverseAlphaArray(["eggplant", "broccoli", "carrot", "cauliflower", "zucchini", "tomato"]))
+
+
+    // jul 21 	Write a JavaScript function that takes in two arguments, and returns whether the first argument is even divisible by the second argument, or not. Non-number arguments should have the function return null.
+
+    function  isDivisible(a, b) {
+    if (typeof a === "number" && typeof b === "number"){
+    return a % b === 0;
+    }
+    else {
+    return null;
+    }
+    }
+
+    console.log(isDivisible(5, 2))
+    console.log(isDivisible(100, 20))
+
+    // July 22 - 	Write a JavaScript function that takes in a length in inches (a number), and converts it to a string listing the length in feet and inches. (Example: 78 => 6’6”). Non-number arguments should have the function return null.
+
+// function returnHeight(inches) {
+//
+//     if (typeof inches === "number"){
+//         return Math.floor(inches / 12) +"'" + (inches % 12) + '"'
+//     } else {
+//             return null;
+//             }
+// }
+//
+// console.log(returnHeight(78))
+//     console.log(returnHeight("word"))
+
+    //July 23 -Write a function that takes in a string and returns the number of words in the string. Non-string inputs should return null.
+
+    function numberOfWords(string1) {
+    if (typeof string1 === "string"){
+            string1.split(" ").length;
+        } else {
+            return null;
+        }
+    }
+
+    console.log(numberOfWords("The quick brown fox jumped over the lazy dog."))
+
+
 
 </script>
 </body>
