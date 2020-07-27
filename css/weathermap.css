@@ -1,0 +1,54 @@
+body {
+font-family: 'Roboto', sans-serif;
+
+}
+h3 {
+color: black;
+}
+
+.jumbotron {
+    background: linear-gradient(to bottom, #693C90 0%, #BC9291 100%) no-repeat fixed;
+    height: 55vh;
+    color:white;
+}
+
+ul {
+    margin: 20px 0 20px 0;
+    padding: 0;
+    list-style-type: none;}
+
+/*.icon {*/
+/*height: 15%;*/
+/*width: 15%;}*/
+
+/*#weekly-forecast {*/
+/*margin: 0 0px 20px 0px;*/
+/*}*/
+
+.main-weather {
+margin-top: 20px;
+font-family: 'Roboto', sans-serif;
+font-size:25px;
+font-weight: bold;
+}
+
+.a-little-bigger {
+font-weight: bold;
+font-size: 30px;}
+
+h1 {
+text-align: left;
+color:white;
+font-size: 60px;
+font-family: 'Open Sans', sans-serif;
+font-weight: bolder;}
+
+.daily-forecast {
+margin-left: auto;
+margin-right: auto;}
+
+#map {
+    /* the width and height may be set to any size */
+    width: 100%;
+    height: 1000px;
+}

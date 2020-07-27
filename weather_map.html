@@ -5,35 +5,35 @@
     <title>Weather Map</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weathermap.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
 </head>
 <body>
 
-<h1>You Can Plan a Pretty Picnic, but You Can't Predict the Weather</h1>
 
-
-<div class="card" style="width: 18rem;">
-    <div id="weather-date" class="card-header">
-    Weather Date
+<div class="jumbotron jumbotron-fluid">
+    <div class="container main-weather">
+        <h1 class="display-4"><strong>7 Day Weather - San Antonio, Texas</strong></h1>
+        <a href="#map"><em>Change Location</em></a>
     </div>
-    <ul class="list-group list-group-flush">
-        <li id="high-low-temp" class="list-group-item">Cras justo odio</li>
-        <li id = "feels-like" class="list-group-item">Dapibus ac facilisis in</li>
-        <li id = "humidity" class="list-group-item">Vestibulum at eros</li>
-    </ul>
-
-
+</div>
+<h3>This Week's Forecast</h3>
+<div class="daily-forecast row col-12">
 </div>
 
-
+<div id='map'></div>
 
 
 <!-- JS files -->
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/keys.js"></script>
 <script src="js/weathermap.js"></script>
 
+
 </body>
 </html>
+
