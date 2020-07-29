@@ -13,18 +13,17 @@
 </head>
 <body>
 
-<input class="nav">
-    <li class="name mr-auto"><a href="#">Weather</a></li>
-    <li>City: <span id="city"></span></li>
+<ul class="nav">
+    <li class="name mr-auto"><img src="the_weather_people.png" alt=""></li>
     <li><a href="#drop-a-pin"><i class="fa fa-3x fa-globe mr-3" style="color:white" aria-hidden="true"></i></a></li>
     <input id="geocoder" type="text" placeholder="Enter Location">
     <button id="search-btn">Search</button>
-</div>
+</ul>
 
 
 <div class="jumbotron jumbotron-fluid">
     <div id="transparent">
-        <h1 class="display-4 title"><strong>5 Day Weather Forecast</strong></h1>
+        <h1 class="display-4 title"><strong>5 Day Weather Forecast - <span id="city"></span></strong></h1>
         <div class="container main-weather"></div>
     </div>
 </div>
@@ -47,16 +46,6 @@
 
 <!-- JS files -->
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
-<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
-<link
-        rel="stylesheet"
-        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
-        type="text/css"
-/>
-<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
