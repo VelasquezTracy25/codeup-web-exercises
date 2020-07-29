@@ -3,33 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <title>Weather Map</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/weathermap.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"/>
 </head>
 <body>
 
+<input class="nav">
+    <li class="name mr-auto"><a href="#">Weather</a></li>
+    <li>City: <span id="city"></span></li>
+    <li><a href="#drop-a-pin"><i class="fa fa-3x fa-globe mr-3" style="color:white" aria-hidden="true"></i></a></li>
+    <input id="geocoder" type="text" placeholder="Enter Location">
+    <button id="search-btn">Search</button>
+</div>
+
 
 <div class="jumbotron jumbotron-fluid">
-    <div class="container main-weather">
-        <h1 class="display-4"><strong>7 Day Weather - San Antonio, Texas</strong></h1>
-        <a href="#map"><em>Change Location</em></a>
+    <div id="transparent">
+        <h1 class="display-4 title"><strong>5 Day Weather Forecast</strong></h1>
+        <div class="container main-weather"></div>
     </div>
 </div>
-<h3>This Week's Forecast</h3>
-<div class="daily-forecast row col-12">
+
+<div id="weekly">
+    <h2 class="ml-4">This Week's Forecast</h2>
+    <div class="daily-forecast d-flex justify-content-around"></div>
 </div>
 
-<div id='map'></div>
+<section id="drop-a-pin" class="my-3">
+    <div class="pin">
+        <i class="fa fa-map-marker fa-5x centered" aria-hidden="true"></i>
+        <h2 class="centered">DROP A PIN, WHAT'S THE COORDINATE?</h2>
+        <p class="centered">View Weather Forecast for Your Area</p>
+    </div>
+    <div id="map"></div>
+    <pre id="coordinates" class="coordinates"></pre>
+</section>
 
 
 <!-- JS files -->
 <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+<link
+        rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+        type="text/css"
+/>
+<!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 <script src="js/keys.js"></script>
 <script src="js/weathermap.js"></script>
 
