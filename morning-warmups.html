@@ -396,7 +396,28 @@
 
     console.log(numberOfWords("The quick brown fox jumped over the lazy dog."))
 
+    //July 24 - Write a function that returns “fizz”, “buzz”, or “fizzbuzz” based on the conditions of the famous FizzBuzz exercise. Any number that doesn’t match these conditions should return the number passed. Any non-number passed should have the function return null.
 
+
+             function fizzbuzz1(num) {
+                 for (let i = 1; i <= num; i++) {
+                     if (typeof num !== "number") {
+                     return null
+                     } else if (i % 4 === 0 & i % 3 === 0) {
+                         console.log("Fizzbuzz");
+                     } else if (i % 4 === 0) {
+                         console.log("Fizz");
+                     } else if (i % 3 === 0) {
+                         console.log("Buzz");
+                     } else {
+                         return num
+                     }
+                 }
+             }
+
+    console.log(fizzbuzz1(100))
+    console.log(fizzbuzz1(10))
+    console.log(fizzbuzz1("sdfj;kds"))
 
 </script>
 </body>

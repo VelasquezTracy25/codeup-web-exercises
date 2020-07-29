@@ -57,8 +57,10 @@
 
     //Draggable Marker
     var marker = new mapboxgl.Marker({
-        draggable: true
+        draggable: true,
     })
+
+    new mapboxgl.Marker({color: 'red'})
 
     function onDragEnd() {
         let lngLat = marker.getLngLat();
