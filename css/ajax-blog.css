@@ -1,0 +1,37 @@
+h1{
+    font-family: 'Noticia Text', serif;
+    font-size: 120px;
+    color: #0D4D90;
+    align-text: center;
+    padding-top: 20px;
+    }
+
+h2, h3 {
+font-family: 'Noticia Text', serif;
+font-size: 40px;
+color: #0D4D90;
+margin-bottom: 0;
+}
+
+body {
+
+    font-family: 'Roboto Mono', monospace;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+aside {
+display: flex;
+justify-content: center;
+align-content: center;
+;
+ }
+
+.blog-card {
+background-color: #F8BAB4;
+font-size: 22px;
+width: 85%;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 20px;
+padding: 0 30px 30px 30px;}
