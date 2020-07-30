@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
 }
 
 .nav {
@@ -18,6 +19,9 @@ body {
 
 }
 
+.list-group-item {
+text-align: center;}
+
 #search-btn {
 background-color: white;
 color: #42265B;
@@ -34,7 +38,7 @@ margin-right: 15px;
     display: flex;
     font-size: 110px;
     font-weight: bold;
-    align-content: center;
+    /*align-content: center;*/
 }
 
 h2, h3 {
