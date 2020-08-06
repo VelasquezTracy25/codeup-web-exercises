@@ -4,6 +4,13 @@ body {
     background-size: cover;
     padding: 0;
     margin: 0;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+
 }
 
 h1 {
@@ -13,17 +20,11 @@ h1 {
     -webkit-text-fill-color: transparent;
     font-size: 180px;
     margin: 0;
-
-
 }
 
-/*span {*/
-/*    font-family: 'VT323', monospace;*/
-
-/*}*/
-
 #cheat-content {
-margin-top:20px;}
+    margin-top: 20px;
+}
 
 a {
     text-decoration: none;
@@ -113,5 +114,4 @@ a:hover {
     animation-name: cat-night;
     animation-duration: 1s;
     animation-iteration-count: 10000;
-
 }

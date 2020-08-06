@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .invisible {
+            visibility: hidden;
+        }
+
+        .highlighter {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<p>National Parks Facts</p>
+<dl>
+    <dt>Fact 1</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 2</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 3</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 4</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 5</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 6</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 7</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 8</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 9</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+
+    <dt>Fact 10</dt>
+    <dd>A large feline inhabiting Bodmin Moor.</dd>
+</dl>
+
+3 Fave National Parks
+
+<h3>National Parks 1</h3>
+<ul>
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+
+<h3>National Parks 2</h3>
+<ul>
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+
+<h3>National Parks 3</h3>
+<ul>
+    <li>Fact 1</li>
+    <li>Fact 2</li>
+    <li>Fact 3</li>
+    <li>Fact 4</li>
+</ul>
+
+<button id="btn">Button</button>
+<script>
+    "use strict";
+
+    // $(document).ready(function () {
+    //     $('dd').addClass('invisible')
+    //
+    //     $('button').click(function () {
+    //         $('dd').toggleClass('invisible')
+    //     });
+    //     $('dd').click(function () {
+    //         $(this).toggleClass('highlighter')
+    //     });
+    // })
+
+    $(document).ready(function () {
+
+        $('button').click(function () {
+            $('li').last().css('background-color', '#yellow');
+        });
+
+        $('#btn1').click(function() {
+            $('ul').each(function () {
+                $(this).children().last().toggleClass('highlight');
+            })
+        });
+// TODO When any h3 is clicked, the lis underneath it should be bolded. Use font-weight: bold to achieve this.
+        $('h3').click(function() {
+            $(this).next().children().toggleClass('boldfont');
+        });
+//TODO When any list item is clicked, first li of the parent ul should have a font color of blue.
+        $('li').click(function() {
+            $(this).parent().children().first().toggleClass('blue-text');
+        });
+    })
+
+
+</script>
+
+</body>
+</html>
