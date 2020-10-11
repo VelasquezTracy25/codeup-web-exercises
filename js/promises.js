@@ -1,3 +1,5 @@
+"use strict";
+
 const githubInfo = username => {
     fetch(`https://api.github.com/users/${username}/events/public`, {headers: {'Authorization': githubAccessToken}})
         .then(response => response.json())

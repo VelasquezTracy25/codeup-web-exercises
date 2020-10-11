@@ -41,4 +41,17 @@ function greet(name){
 greet(person[1].name);
 
 
+//Ternary
+
+let points = 110;
+//will return either true or false
+let type = points > 100 ? 'gold' : 'silver';
+// if points > 100 then return (true)'gold' else(:) (false)'silver'
+
+//Truthy and Falsy
+
+
+
+
+
 
