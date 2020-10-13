@@ -36,8 +36,8 @@ a:hover {
 }
 
 #start {
-    height: 1000px;
-    width: 1800px;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
